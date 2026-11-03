@@ -1,8 +1,14 @@
 class Mahasiswa{
-  Mahasiswa(this.nama,this.nim,this.umur);
+  Mahasiswa({
+  required this.nama,
+  required this.nim,
+  required this.umur,
+  required this.org});
+
   final String nama;
   final String nim;
   final String umur;
+  final String? org;
 
   void jurusan(){
   print("CA");
@@ -10,7 +16,7 @@ class Mahasiswa{
 }
 
 void main(){
-  final i =Mahasiswa("Deny Kurniawan ","1124160129"," 25"); 
+  final i =Mahasiswa(nama:"Deny Kurniawan ",nim:"1124160129",umur:" 25",org:"Mapala"); 
   print(i.nama + i.nim + i.umur);
   i.jurusan();
 }
