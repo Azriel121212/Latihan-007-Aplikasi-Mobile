@@ -15,7 +15,7 @@ class MyListView extends StatelessWidget {
       appBar: AppBar(
         title:const Text("belajar dart"),
       ),
-      body: Row(
+      body: ListView(
         children: [
                 InfoRow(ikon: Icons.email_rounded,Label: 'Email', Value: 'Azriel@gmail.com'),
                 InfoRow(ikon: Icons.email_rounded,Label: 'Email', Value: 'Danu@gmail.com'),
